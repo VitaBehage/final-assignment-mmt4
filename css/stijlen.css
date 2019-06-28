@@ -1,0 +1,803 @@
+body.night,
+body.night #accordion,
+body.night #videowrap,
+body.night .email,
+body.night h3,
+body.night header,
+body.night #supportwrap h4,
+body.night #supportwrap h5,
+body.night #videowrap h2 {
+    background: black;
+    color: white;
+}
+
+body.night .emailblok,
+body.night .email {
+    background: white;
+    color: black;
+}
+
+#logowit {
+    z-index: 40;
+}
+
+#logowit.bovenop {
+    z-index: 45;
+}
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#headerwrap {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    float: left;
+    margin-right: 60px;
+    padding-top: 40px;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1D00FF;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 40;
+    margin-top: 20px;
+    z-index: 42;
+}
+
+#containerintro {
+    background-image: url(../afbeeldingen/intro2@2x.png);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#introtekstwrap {
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#containerintro p {
+    font-size: 20px;
+    padding-top: 20px;
+    color: white;
+    max-width: 720px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1D00FF;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-left: 60px;
+    font-style: bold;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#videowrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -100px;
+    background: white;
+    margin-bottom: 100px;
+}
+
+.ui-accordion-header {
+    background: white;
+    height: 75px;
+    border: 1px solid #EBEBEB;
+    margin-left: 40px;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 75px
+}
+
+body h3.ui-accordion-header-active {
+    border: 1px solid #1D00FF;
+    color: #1D00FF;
+    font-weight: bold;
+}
+
+.ui-accordion-header-active .pijltjerechts {
+    transform: rotate(90deg);
+    height: 28px;
+    width: 28px;
+
+}
+
+.ui-accordion-header-active .pijltjerechts path {
+    fill: #1D00FF;
+}
+
+.ui-accordion-content {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+#accordion {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.video-js {
+    width: 1088px;
+    margin: 0 auto;
+    height: 612px;
+}
+
+.accordionwrap:hover .play {
+    opacity: 1;
+}
+
+.accordionwrap:hover .terug {
+    opacity: 1;
+}
+
+.accordionwrap:hover .done {
+    opacity: 1;
+}
+
+.accordionwrap {
+    position: relative;
+}
+
+.accordionwrap p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.play {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url(../afbeeldingen/play-btn@2x.png);
+    height: 90px;
+    width: 90px;
+    border: none;
+    opacity: 0;
+}
+
+.terug {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url(../afbeeldingen/rewind%20btn@2x.png);
+    height: 60px;
+    width: 60px;
+    border: none;
+    opacity: 0;
+}
+
+.done {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url(../afbeeldingen/check%20btn2@2x.png);
+    height: 60px;
+    width: 60px;
+    border: none;
+    opacity: 0;
+}
+
+.popup {
+    position: fixed;
+    height: 400px;
+    width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    display: none;
+    z-index: 60;
+    border: none;
+    background: #BBFFB2;
+    font-family: 'Playfair Display', serif;
+    color: #119100;
+    line-height: 400px;
+    padding-left: 80px;
+    font-size: 25px;
+
+    animation-name: rounding;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes rounding {
+    0% {
+        border-radius: 0 0 0 0;
+    }
+
+    50% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 0 0 0 0;
+    }
+}
+
+.kruisje {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: none;
+}
+
+.kruisje:hover {
+    transform: rotate(136deg);
+}
+
+#introroze {
+    text-transform: uppercase;
+    color: #CC0085;
+    background-color: #FFAFE3;
+    border-radius: 50px;
+    height: 40px;
+    width: 114px;
+    float: right;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.klaar {
+    border-radius: 50px;
+    height: 40px;
+    width: 82px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-image: url(../afbeeldingen/klaar@2x.png);
+    float: left;
+    opacity: 0;
+}
+
+#accordion h3 span {
+    margin-left: 20px;
+    float: left;
+}
+
+#accordion h3 .pijltjerechts {
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+    display: block;
+    height: 28px;
+    width: 28px;
+}
+
+.downloadblauw {
+    text-transform: uppercase;
+    color: #1D00FF;
+    background-color: #D1E7FF;
+    border-radius: 50px;
+    height: 40px;
+    width: 150px;
+    float: right;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#accordion h3 .download {
+    float: right;
+    height: 40px;
+    width: 195px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+
+#supportwrap {
+    max-width: 1088px;
+    margin: 0 auto;
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1D00FF;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #1D00FF;
+    padding-bottom: 50px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.floatblokken {
+    float: left;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.tekstcontsupport {
+    margin-left: 10px;
+    float: left;
+}
+
+.naam {
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.titel {
+    font-family: 'Montserrat', sans-serif;
+    color: #EBEBEB;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.email {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.emailblok {
+    height: 30px;
+    width: 80px;
+    background: black;
+    border-radius: 10px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#imgrij1links {
+    border-radius: 50%;
+    float: left;
+    max-height: 136px;
+    max-width: 136px;
+}
+
+#blokrij1links #imgrij1links p {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#imgrij1rechts {
+    border-radius: 50%;
+    float: left;
+    max-height: 136px;
+    max-width: 136px;
+}
+
+#blokrij1rechts #imgrij1rechts p {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#imgrij2links {
+    border-radius: 50%;
+    float: left;
+    max-height: 136px;
+    max-width: 136px;
+}
+
+#blokrij2links #imgrij2links p {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#imgrij2rechts {
+    border-radius: 50%;
+    float: left;
+    max-height: 136px;
+    max-width: 136px;
+}
+
+#blokrij2rechts #imgrij2rechts p {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#containeruitdaging {
+    background-image: url(../afbeeldingen/footerimg2@2x.png);
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#uitdagingwrap {
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+h6 {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    padding: 40px;
+    line-height: 70px;
+}
+
+#containeruitdaging #uitdagingwrap p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#containeruitdaging #uitdagingwrap button {
+    display: block;
+    width: 270px;
+    height: 60px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #1D00FF;
+    color: #FFAFE3;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
+}
+
+
+footer {
+    width: 100%;
+    background: black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#footerwrap {
+    max-width: 1200px;
+    height: 125px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+footer #footerwrap p {
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+}
+
+#dagnacht {
+    width: 80px;
+    height: 40px;
+    background-color: #EBEBEB;
+    float: right;
+    border-radius: 30px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 1;
+}
+
+#zon {
+    height: 25px;
+    width: 25px;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#moon {
+    height: 25px;
+    width: 25px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+#switch {
+    background-color: white;
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    z-index: 4;
+    transition: 0.5s all ease;
+}
+
+#switch.active {
+    left: 40px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    #headerwrap nav ul li a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+
+    #containerintro p {
+        font-size: 20px;
+        padding-left: 20px;
+        max-width: 520px;
+    }
+
+    #supportwrap {
+        margin-left: 20px;
+    }
+
+    #accordion h3 .download {
+        width: 130px;
+    }
+
+    .downloadblauw {
+        width: 130px;
+    }
+
+    #introroze {
+        width: 130px;
+    }
+
+    .klaar {
+        height: 20px;
+        width: 42px;
+        background-image: url(../afbeeldingen/klaar4@2x.png);
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    #logoblauw {
+        margin-left: 20px;
+    }
+
+    #logowit {
+        margin-left: 20px;
+    }
+
+    footer #footerwrap p {
+        font-size: 15px;
+    }
+
+    .done {
+        left: 70%;
+    }
+
+    .terug {
+        left: 30%;
+    }
+}
+
+
+@media screen and (max-width: 667px) {
+    #headerwrap nav ul li a {
+        font-size: 7px;
+
+    }
+
+    #headerwrap nav ul li {
+        margin-right: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+        max-width: 330px;
+        line-height: 35px;
+    }
+
+    #containerintro p {
+        font-size: 12px;
+        max-width: 280px;
+    }
+
+    .downloadblauw {
+        width: 40px;
+        font-size: 5px;
+        height: 20px;
+        margin-top: 25px;
+        margin-right: 22px;
+    }
+
+    #accordion h3 .download {
+        width: 60px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    #introroze {
+        width: 50px;
+        font-size: 4px;
+        height: 20px;
+        margin-top: 25px;
+    }
+
+    .klaar {
+        margin-left: 0px;
+    }
+
+    h2 {
+        margin-left: -40px;
+        font-size: 13px;
+    }
+
+    h3 span {
+        font-size: 8px;
+    }
+
+    #accordion h3 .pijltjerechts {
+        height: 15px;
+        width: 15px;
+        margin-top: 30px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    .floatblokken {
+        float: none;
+        margin: 0 auto;
+    }
+
+    h6 {
+        font-size: 30px;
+    }
+
+    #containeruitdaging #uitdagingwrap p {
+        font-size: 20px;
+    }
+
+    #containeruitdaging #uitdagingwrap button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #dagnacht {
+        right: 40px;
+    }
+
+    footer #footerwrap p {
+        font-size: 15px;
+        right: 150px;
+    }
+
+    .klaar {
+        height: 20px;
+        width: 42px;
+        background-image: url(../afbeeldingen/klaar4@2x.png);
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .accordionwrap p {
+        font-size: 10px;
+    }
+
+    .play {
+        background-image: url(../afbeeldingen/play-btnKLEIN@2x.png);
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .done {
+        background-image: url(../afbeeldingen/check%20btn2KLEIN@2x.png);
+        height: 30px;
+        width: 30px;
+    }
+
+
+    .terug {
+        background-image: url(../afbeeldingen/rewind%20btnKLEIN@2x.png);
+        height: 30px;
+        width: 30px;
+    }
+
+    .popup {
+        height: 200px;
+        width: 150px;
+        font-size: 10px;
+        line-height: 200px;
+        padding-left: 50px;
+    }
+
+}
+
+
+
+.clear {
+    clear: both;
+}
